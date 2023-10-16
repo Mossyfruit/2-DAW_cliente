@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
+    <script defer type="text/javascript" src="./scriptEjem01.js"></script>
+    <title>Javascript en la página</title>
+ 
+</head>
+
+<body>
+    <h1>Introduce el nombre del usuario</h1>
+    <input id="nombre" type="text" value="Defecto">
+    <input id="guardar" type="button" value="Guardar" onclick="guardar()">
+    <h2>Saluda al usuario por su nombre</h2>
+    <h3 onclick="saludar()">presiona para saludar</h3>  
+</br>
+
+    <h2>Saluda al usuario por su nombre y despidelo</h2>
+    <h3><button onclick="saludar()">saludar</button><button onclick="despedir()">despedir</button></h3>
+
+    <h2>Saluda al usuario por su nombre y despidelo según actue</h2>
+    <h3>
+        <div onmouseenter="saludar()" onmouseleave="despedir()">
+            
+        </div>
+    </h3>
+    <h3 id="salida"></h3>
+</body>
+
+</html>
