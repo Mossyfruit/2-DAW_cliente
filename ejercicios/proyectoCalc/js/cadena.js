@@ -1,23 +1,53 @@
 'use strict'
-function separador(){if(cadena.includes(simbolo,0)){
+function separador(){
     //Separamos numeros de operadores
     let posFinal=-1;
+    console.log("Cadena a separar:")
     console.log(cadena);
     if(cadena.startsWith('-')){
-        num1=parseFloat(cadena.slice(cadena.indexOf(simbolo,posFinal)+1))*-1;
+        console.log("Empieza con -");
+        num1=parseFloat(cadena.slice(cadena.indexOf('-',posFinal)+1));
         console.log(`el numero negativo primero es: ${num1}`);
-        //Ahora obtenemos los numeros negativos de cadena
-       /*  for (let i = 0; i < cadena.length; i++) {
-            if(cadena[i]=='-'){
-                num2=parseFloat(cadena.slice(i+1));
-                console.log(`el numero negativo segundo es: ${num2}`);
-               */
-                }else{num1=parseFloat(cadena.slice(0,cadena.indexOf(simbolo,posFinal)));
+        num1=num1*-1;
+        console.log(num1);
+        num2=parseFloat(cadena.slice(cadena.indexOf(simbolo)+1));
+        console.log(num2);
+        if(cadena.length<3){
+            num2=0
+        }else if(simbolo=='+'){
+            
+            
+            console.log("Num2 sera sumado")
+        }else{
+            console.log("default");
+        console.log(cadena.lastIndexOf(simbolo));
+        num2=parseFloat(cadena.slice(cadena.indexOf(simbolo)+1))*-1;
+        }
+    }else{
+        num1=parseFloat(cadena.slice(0,cadena.indexOf(simbolo,posFinal)));
+        
+        console.log(cadena.slice(cadena.indexOf(simbolo,posFinal)));
         num2=parseFloat(cadena.slice(cadena.indexOf(simbolo,posFinal)+1));}
     
     
+    console.log("Los numeros sacados de la cadena son:");
+    num1 = num1 ? num1 : 0;
     console.log(num1);
-    
+    num2 = num2 ? num2 : 0;
     console.log(num2);
+    console.log("la operacion es:")
+    console.log(simbolo);
 }
+
+function simbolos(){
+    console.log(`El simbolo introducido es ${simbolo}`);
+    if(!cadena.includes(simbolo,0)){
+        
+        cadena +=simbolo;
+        console.log(`la cadena con simbolo es: ${cadena}`);
+        document.getElementById("cadena").innerHTML=cadena;
+        console.log(cadena);
+        
     }
+}
+

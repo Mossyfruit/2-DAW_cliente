@@ -6,59 +6,135 @@ let num2=0;
 let result=0;
 let simbolo;
 function sumar(){ 
+    simbolo='+';
+    if(!cadena.includes(simbolo,0)){
+    
+    simbolos();
+    console.log("Se ha completado simbolos");
+    
+} else{
+    separador(simbolo);
+    console.log(num1);
 
-
-    if(!cadena.includes("+",0)){
-        simbolo='+';
-        cadena +='+';
-        console.log(cadena);
-        parsearCadena(cadena);
-        console.log(arrayNumeros)
-        for(let i=0; i<arrayNumeros.length;i++){
-            input1+=arrayNumeros[i]
-        }
-        input1=parseInt(input1);
-        console.log(input1);
-    }else{
-            separador(simbolo);
-        if(num2!=NaN){
+    if(num1!==0){
+            if(num2!=NaN){
             cadena= num1+num2;
             document.getElementById("cadena").innerHTML=cadena;
             cadena=document.getElementById("cadena").innerHTML;
             cadena+='+';
-        }else{
-            num2=0;
-        }
-                        }
-                    }
-
-function restar(){ 
-
-
-    if(!cadena.includes("-",0)){
-        simbolo='-';
-        cadena +='-';
-        console.log(cadena);
-        parsearCadena(cadena);
-        console.log(arrayNumeros)
-        for(let i=0; i<arrayNumeros.length;i++){
-            input1+=arrayNumeros[i]
-        }
-        input1=parseInt(input1);
-        console.log(input1);
+            }
     }else{
-            separador(simbolo);
-        if(num2!=NaN){
-            cadena= num1-num2;
-            console.log(cadena);
+            num1=0;
+            cadena= num1+num2;
             document.getElementById("cadena").innerHTML=cadena;
             cadena=document.getElementById("cadena").innerHTML;
-            console.log(cadena);
+                    }
+                }
+                }
+
+function restar(){ 
+    simbolo='-';
+    if(!cadena.includes(simbolo,0)){
+    
+    simbolos();
+    console.log("Se ha completado simbolos");
+    
+
+    
+    }else{
+            separador(simbolo);
+            console.log(num1);
+
+        if(num2!=NaN && num2>0 && num1!=0){
+            console.log("case D");
+            cadena= num1-num2;
+            
+            document.getElementById("cadena").innerHTML=cadena;
+            cadena=document.getElementById("cadena").innerHTML;
+            
             cadena+='-';
             console.log(cadena);
-        }else if(num2<0){
-            num2=0;
+        }else if(num2!=NaN && num2<0 && num1!=0){
+            console.log("case C");
+          
+            cadena= num1+num2;
+           
+            document.getElementById("cadena").innerHTML=cadena;
+            cadena=document.getElementById("cadena").innerHTML;
+           
+            cadena+='-';
+            console.log(cadena);
+        }else if(num2!=NaN && num2>0 && num1==0){
+            console.log("case A");
+            cadena= num1-num2;
+            document.getElementById("cadena").innerHTML=cadena;
+            cadena=document.getElementById("cadena").innerHTML;
             
+
+        }else if(num2!=NaN && num2<0 && num1==0){
+            console.log("case B");
+            cadena= num1+num2;
+           
+            document.getElementById("cadena").innerHTML=cadena;
+            cadena=document.getElementById("cadena").innerHTML;
         }
                         }
                     }
+
+function multiplicar(){
+    simbolo='*';
+
+    if(!cadena.includes(simbolo,0)){
+        simbolos();
+        console.log("Se ha completado simbolos");
+        }else{
+            separador(simbolo);
+            console.log(num1);
+            if(num2!=NaN){
+                cadena= num1*num2;
+                document.getElementById("cadena").innerHTML=cadena;
+                cadena=document.getElementById("cadena").innerHTML;
+                cadena+='*';
+                console.log(cadena);
+                }
+                }
+
+}
+function dividir(){
+    simbolo='/';
+
+    if(!cadena.includes(simbolo,0)){
+        simbolos();
+        console.log("Se ha completado simbolos");
+        }else{
+            separador(simbolo);
+            console.log(num1);
+            if(num2!=NaN){
+                cadena= num1/num2;
+                document.getElementById("cadena").innerHTML=cadena;
+                cadena=document.getElementById("cadena").innerHTML;
+                cadena+='/';
+                console.log(cadena);
+                }
+                }
+
+}
+function cambiarSigno(){
+    simbolo='+/-';
+
+    if(!cadena.includes(simbolo,0)){
+        simbolos();
+        console.log("Se ha completado simbolos");
+        }else{
+            separador(simbolo);
+            console.log(num1);
+            if(num2!=NaN){
+                cadena= num1/num2;
+                document.getElementById("cadena").innerHTML=cadena;
+                cadena=document.getElementById("cadena").innerHTML;
+                cadena+='/';
+                console.log(cadena);
+                }
+                }
+
+}

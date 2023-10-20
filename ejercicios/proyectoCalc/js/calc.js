@@ -85,51 +85,23 @@ let arrayNumeros = [];
 let arrayOperadores=[];
 
 //Recorremos la cadena y diferenciamos numeros de operadores en nuevos String
-function parsearCadena(cadena){
 
-    for (let i = 0; i < cadena.length; i++) {
-        if(!isNaN(parseInt(cadena[i]))){ //Si es un
-            arrayNumeros.push(cadena[i]);
-            }else{
-                arrayOperadores.push(cadena[i]);
-                }
-                }
-                return [arrayNumeros,arrayOperadores]
-
-    
     
 
  
 
-}
 
 
     
-let pos=-1
-let email = 'jota_pe@educaand.es'
-console.log(`El correo es: ${email}`);
-console.log(`El nombre del usuario es: ${email.slice(0, email.indexOf('@', pos))}`);
-console.log(`El servidor es: ${email.slice(email.indexOf('@', pos) + 1, email.indexOf('.', pos))}`);
-console.log(`El dominio es: ${email.slice(email.indexOf('.', pos) + 1)}`); // si el nombre del usuario contiene un '.' fallaría
 
 
 
-let despedida = 'Adios';
-console.log(despedida);
-// despedida[0] = 'a'; // error
-despedida = 'Hasta Luego';
-console.log(despedida); // sustituye todo el string
-// Copiar la cadena despedida con la 'H' en minúscula 'h'
-let despedida2 = 'h';
-for (let i = 1; i < despedida.length; i++) {
-    despedida2 += despedida[i]; // adios
-}
-console.log(despedida2);
+
 
 /////////////////////////////////////////////////NUMBERS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 document.getElementById("0").onclick = function (){
-    if (cadena="0") {
-        cadena=0;
+    if (cadena==="0") {
+        cadena='0';
         console.log(cadena);
         
     }else{
@@ -203,14 +175,15 @@ document.getElementById("9").onclick = function (){};
 document.getElementById("+").onclick = function(){sumar()};
 
 
-document.getElementById("-").onclick = function (){restar()};
+let botonresta=document.getElementById("-").onclick = function (){restar()};
+
+
+document.getElementById("*").onclick = function (){multiplicar()};
+
+
+
+document.getElementById("/").onclick = function (){dividir()};
 /*
-
-document.getElementById("*").onclick = function (){};
-
-
-
-document.getElementById("/").onclick = function (){};
 
 document.getElementById("+/-").onclick = function (){};
 
