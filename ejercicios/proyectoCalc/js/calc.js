@@ -79,10 +79,9 @@ No usaremos Eval() ya que buscamos demostrar nuestra capacidad con la programaci
 
 
 let cadena= document.getElementById("cadena").innerHTML;
-let input1="";
-console.log(cadena);
-let arrayNumeros = [];
-let arrayOperadores=[];
+let numM=0;
+let numero='0';
+
 
 //Recorremos la cadena y diferenciamos numeros de operadores en nuevos String
 
@@ -95,87 +94,71 @@ let arrayOperadores=[];
     
 
 
-
-
+/////////////////////////////////////////////////STYLE\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+document.getElementById("selectorButton").addEventListener('change',function(){cambiaStyle()});
 
 /////////////////////////////////////////////////NUMBERS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 document.getElementById("0").onclick = function (){
-    if (cadena==="0") {
-        cadena='0';
-        console.log(cadena);
-        
-    }else{
-    cadena +='0';
-
-    console.log(cadena);
-    document.getElementById("cadena").innerHTML=cadena;
-    }
+    numero='0';
+    escribeNumero(numero);
 
 };
 
 document.getElementById("1").onclick = function (){
-    if(cadena==="0"){
-    cadena ='1';
-    console.log(cadena);
-    document.getElementById("cadena").innerHTML=cadena;
-    console.log("pillado")
-    } else{
-
-        cadena+='1';
-        console.log(cadena);
-        document.getElementById("cadena").innerHTML=cadena;
-    }
+   numero='1';
+   escribeNumero(numero);
 
 };
 
 document.getElementById("2").onclick = function (){
-    if(cadena=="0"){
-        cadena ='2';
-        console.log(cadena);
-        document.getElementById("cadena").innerHTML=cadena;
-        console.log("pillado");
-        } else{
-
-        cadena +='2';
-     console.log(cadena);
-     document.getElementById("cadena").innerHTML=cadena;
-        }
+    numero='2';
+    escribeNumero(numero);
 };
 
 document.getElementById("3").onclick = function (){
-    if(cadena=="0"){
-            cadena ='3';
-            console.log(cadena);
-            document.getElementById("cadena").innerHTML=cadena;
-            console.log("pillado");
-    } else{
-            cadena +='3';
-            console.log(cadena);
-            document.getElementById("cadena").innerHTML=cadena;
-        }
+    numero='3';
+    escribeNumero(numero);
 
         
 };
-/*
-document.getElementById("4").onclick = function (){};
 
-document.getElementById("5").onclick = function (){};
+document.getElementById("4").onclick = function (){
+    numero='4';
+    escribeNumero(numero);
+};
 
-document.getElementById("6").onclick = function (){};
+document.getElementById("5").onclick = function (){
+    numero='5';
+    escribeNumero(numero);
+};
 
-document.getElementById("7").onclick = function (){};
+document.getElementById("6").onclick = function (){
+    numero='6';
+    escribeNumero(numero);
+};
 
-document.getElementById("8").onclick = function (){};
+document.getElementById("7").onclick = function (){
+    numero='7';
+    escribeNumero(numero);
+};
 
-document.getElementById("9").onclick = function (){};
+document.getElementById("8").onclick = function (){
+    numero='8';
+    escribeNumero(numero);
+};
+
+document.getElementById("9").onclick = function (){
+    numero='9';
+    escribeNumero(numero);
+};
 
 
 /////////////////////////////////////////////////OPERATORS\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-*/
+
 document.getElementById("+").onclick = function(){sumar()};
 
 
-let botonresta=document.getElementById("-").onclick = function (){restar()};
+document.getElementById("-").onclick = function (){restar()};
 
 
 document.getElementById("*").onclick = function (){multiplicar()};
@@ -183,26 +166,31 @@ document.getElementById("*").onclick = function (){multiplicar()};
 
 
 document.getElementById("/").onclick = function (){dividir()};
-/*
 
-document.getElementById("+/-").onclick = function (){};
 
-document.getElementById(".").onclick = function (){};
+document.getElementById("+/-").onclick = function (){cambiarSigno()};
 
-document.getElementById("1/x").onclick = function (){};
 
-document.getElementById("√").onclick = function (){};
+document.getElementById(".").onclick = function (){
+    numero='.';
+    escribeNumero(numero);
+};
 
-document.getElementById("%").onclick = function (){};
+document.getElementById("1/x").onclick = function (){fraccionDecimal()};
 
-document.getElementById("=").onclick = function (){};
+document.getElementById("√").onclick = function (){ raizCuadrada()};
+
+
+document.getElementById("%").onclick = function (){porcentaje()};
+
+document.getElementById("=").onclick = function (){resultado()};
 
 /////////////////////////////////////////////////////MEMORY\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-document.getElementById("M").onclick = function (){};
+document.getElementById("M").onclick = function (){memoriaM()};
 
-document.getElementById("C").onclick = function (){};
+document.getElementById("C").onclick = function (){memoriaC()};
 
-document.getElementById("CE").onclick = function (){};
+document.getElementById("CE").onclick = function (){memoriaCE()};
 
-document.getElementById("<").onclick = function (){};*/
+document.getElementById("<").onclick = function (){memoriaUndo()};

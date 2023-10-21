@@ -4,6 +4,17 @@ function separador(){
     let posFinal=-1;
     console.log("Cadena a separar:")
     console.log(cadena);
+    if(simbolo==undefined || simbolo==''){
+        console.log("No hay simbolo, por lo que cadena es:")
+        console.log(cadena);
+        cadena=parseFloat(cadena);
+        num1=cadena;
+        console.log("numero obtenido:")
+        console.log(num1);
+
+    }else{
+        
+    
     if(cadena.startsWith('-')){
         console.log("Empieza con -");
         num1=parseFloat(cadena.slice(cadena.indexOf('-',posFinal)+1));
@@ -37,6 +48,7 @@ function separador(){
     console.log(num2);
     console.log("la operacion es:")
     console.log(simbolo);
+    }
 }
 
 function simbolos(){
