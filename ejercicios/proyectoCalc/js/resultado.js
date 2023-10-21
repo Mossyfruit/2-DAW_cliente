@@ -1,4 +1,14 @@
 'use strict'
+
+/**
+ * LEEAME
+ * @author Mossfruit
+ * 
+ *      Para ver el proposito del proyecto y el indice, leer calc.js
+ * 
+ * Este archivo contiene una simple funcion con un switch que llama a la operacion adecuada al pulsar "=". Si se pulsase el mismo boton de operacion,
+ * tambien se realizaria. 
+ * */
 function resultado(){
     separador(simbolo);
     console.log(simbolo);
@@ -36,23 +46,48 @@ function resultado(){
             
 
             break;
-        case '':
+        case 'R':
+            rand();
 
             break;
-        case '':
+        case '^':
+            power();
 
             break;
-        case '':
+        case '¨':
+            power2();
 
             break;
-        case '':
+        case 'n':
+            ln();
 
             break;
-        case '':
+        case 'l':
+            log();
 
             break;
-        case '':
+        case 'e':
+            euler();
 
             break;
+        case 'π':
+            pi();
+            break;
+        case '!':
+            fact();
+            break;
+        case 'r':
+            modulo();
+            break;
+        case 's':
+            seno();
+            break;
+        case 'c':
+            coseno();
+            break;
+        case 't':
+            tangente();
+            break;
+
     }
 }
