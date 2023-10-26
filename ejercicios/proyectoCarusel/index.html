@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+
+    
+    <script defer type = "text/javascript" src="./js/tamaño.js"></script>
+    <script defer type = "text/javascript" src="./js/transiciones.js"></script>
+    <script defer type = "text/javascript" src="./js/cambiar.js"></script>
+    <script defer type = "text/javascript" src="./js/solicitud.js"></script>
+    <script defer type = "text/javascript" src="./js/script.js"></script>
+   
+    <title>Visor de Imagenes en Carusel</title>
+</head>
+<body>
+    <!--Creamos una pagina con un visor de imagenes-->
+    <h2>Visor de Imágenes</h2>
+    <div class="visor" id="visor">
+        
+        <div id="salida">
+            <table>
+                <td>
+                    <th id="tablaSaliente">
+                        <img src="" alt="" id="imagenSaliente">
+                    </th>
+                </td>
+            </table>
+            
+        </div>
+        <div id="entrada">
+            <table>
+                <td>
+                    <th id="tablaEntrante">
+                        <img src="" alt="" id="imagenEntrante">
+                    </th>
+                </td>
+            </table>
+            
+        </div>
+     
+    </div>
+    <div id="menu"> 
+        <div class="botones">
+            <input type="button" value="Izquierda a Derecha" id="IzDe">
+            <input type="button" value="Derecha a Izquierda" id="DeIz">
+            <input type="button" value="Arriba a abajo" id="ArAb">
+            <input type="button" value="Abajo a Arriba" id="AbAr">
+            <input type="button" value="Transparencia" id="T">
+            <input type="button" value="Pequeño a grande" id="pG">
+            <input type="button" value="Grande a pequeño" id="Gp">
+            <input type="button" value="Sin transicion" id="none">
+            
+        </div>
+        <div class="Medidas">
+            Alto:
+        <input type="text" name="dimension1" id="alto">
+        Ancho:
+        <input type="text" name="dimension2" id="ancho">
+        <input type="button" value="Commit" id="commit">
+        <p>Introduce Alto y Ancho, y pulsa commit para determinar el tamaño de la imagen.</p>
+        </div>
+    </div>
+    
+
+
+
+
+
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+* {
+    margin: auto;
+    padding: 0px;
+}
+h2{
+    text-align: center;
+    
+}
+#visor {
+    position: relative;
+    left: 30px;
+    top: 80px;
+    width: 400px;
+    height: 300px;
+    background-color: silver;
+    text-align: center;
+    overflow: hidden;
+    
+}
+.visor img {
+    height: 300px;
+    width: 400px;
+}
+#menu {
+    position: relative;
+    left: 30px;
+    top: 100px;
+    width: 600px;
+    height: 100px;
+    background-color: silver;
+    text-align: center;
+    z-index: 10;
+    
+}
+
+#salida {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    margin: 2px
+  
+}
+#entrada {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    z-index: 2;
+    margin: 2px;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+.button{
+    background-color: rgb(182, 182, 182);
+    display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 1px;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  margin: 20px 40px 5px 0;
+  cursor: pointer;
+  font-size: 1rem;
+}

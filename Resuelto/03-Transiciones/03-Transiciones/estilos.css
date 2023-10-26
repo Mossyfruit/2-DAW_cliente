@@ -1,0 +1,86 @@
+* {
+        margin: auto;
+        padding: 0px;
+}
+
+h1 {
+        font: bold 1.5em garamond arial;
+        text-align: center;
+        padding: 0.2em;
+}
+
+h3 {
+        font: bold 1.2em garamond arial;
+        padding: 0.2em 1em
+}
+
+#menu {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 150px;
+        height: 500px;
+        background-color: #e3f2ff;
+}
+
+#menu li {
+        padding: 0.2em 1em;
+        font: normal 0.9em arial;
+        cursor: pointer
+}
+
+#visor {
+        position: absolute;
+        left: 300px;
+        top: 80px;
+        width: 400px;
+        height: 340px;
+        background-color: silver;
+        overflow: hidden;
+        text-align: center;
+}
+
+#visor img {
+        width: 400px;
+}
+
+#saliente {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        text-align: center;
+}
+
+#entrante {
+        position: absolute;
+        top: 0px;
+        left: 400px;
+        text-align: center;
+}
+
+#tituloSaliente {
+        position: absolute;
+        top: 310px;
+        left: 50px;
+        font: normal 0.9em arial;
+        padding-bottom: 3em;
+}
+
+#tituloEntrante {
+        position: absolute;
+        top: 310px;
+        left: 50px;
+        font: normal 0.9em arial;
+        padding-bottom: 3em;
+}
+
+#prueba {
+        position: absolute;
+        top: 450px;
+        left: 200px;
+        font: normal 0.9em arial
+}
+
+table {
+        border-collapse: collapse;
+}
