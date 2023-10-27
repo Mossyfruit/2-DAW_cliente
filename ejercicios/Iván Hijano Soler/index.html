@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/styles.css" rel="stylesheet" type="text/css" />
 
-    
+    <script defer type = "text/javascript" src="./js/intervalo.js"></script>
     <script defer type = "text/javascript" src="./js/tamaño.js"></script>
     <script defer type = "text/javascript" src="./js/transiciones.js"></script>
     <script defer type = "text/javascript" src="./js/cambiar.js"></script>
@@ -16,7 +16,11 @@
 </head>
 <body>
     <!--Creamos una pagina con un visor de imagenes-->
-    <h2>Visor de Imágenes</h2>
+    
+    <div id="full">
+        <h2>Visor de Imágenes</h2>
+        <h3>Iván Hijano Soler</h3>
+        <h4>Mossfruit</h4>
     <div class="visor" id="visor">
         
         <div id="salida">
@@ -60,9 +64,13 @@
         <input type="text" name="dimension2" id="ancho">
         <input type="button" value="Commit" id="commit">
         <p>Introduce Alto y Ancho, y pulsa commit para determinar el tamaño de la imagen.</p>
+        <p>Introduce tiempo de intervalo:</p>
+        <input type="text" name="interval" id="intervalo">
+        <input type="button" value="Commit" id="commitIntervalo">
+        <p id="warning">¡Alterar mucho la velocidad afectara a los efectos visuales!</p>
         </div>
     </div>
-    
+</div>
 
 
 

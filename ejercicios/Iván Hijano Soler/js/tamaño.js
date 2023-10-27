@@ -20,6 +20,5 @@ function cambiarTamaño(){
     salida.style.height=""+alto+"px";
     entrada.style.width=""+ancho+"px";
     entrada.style.height=""+alto+"px";
-    document.getElementById("visor").style.height=""+alto+"px";
-    document.getElementById("visor").style.height=""+ancho+"px";
+    
 }

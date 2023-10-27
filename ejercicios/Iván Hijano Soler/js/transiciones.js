@@ -8,9 +8,16 @@ let transpEnt=0;
 let cont=0;
 function transicion() {
     console.log("Iniciando transicion")//Para fines de debugging
+    console.log("Intervalo:"+intervalo);
     switch(modo){
         case "0"://Sin transicion
-
+        if(salida.src==entrada.src){//Como estamos trayendo imagenes de una api, nos aseguramos de que no sean la misma. De serlo, solicitamos una nueva
+            console.log(entrada.src);
+            console.log(salida.src);
+            entrada.src=solicitar();
+            
+            console.log("Imagen")
+                                    }
             salida.src=solicitar();
             entrada.src=solicitar();
             //Llamamos dos nuevas imagenes de nuestra API

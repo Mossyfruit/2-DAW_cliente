@@ -28,6 +28,8 @@
  *                          Aquí se halla la funcion principal para cambiar las posiciones y dar los datos iniciales de los componentes de la página
  * ================================================== transiciones.js
  *                          En este archivo se encuentra la función encargada de realizar las transiciones entre imagenes
+ * ================================================== intervalo.js
+ *                          El documento contiene la función para alterar la velocidad de ejecución de las transiciones.
  */
 
 
@@ -53,7 +55,8 @@ const tablaE = document.getElementById("tablaEntrante");
 const tablaS = document.getElementById("tablaSaliente"); 
 console.log(divSal);
 salida.src="https://source.unsplash.com/random/300x200?sig="+Math.random()+"";
-let completado = setInterval(transicion, 50000);
+let intervalo=8000;
+let completado = setInterval(transicion, 25000);
 let posEnt= 400;
 let posSal= 0;
 let nImagen = 0;
@@ -69,9 +72,9 @@ let transparencia=0;
  * El modo por defecto es "0", que es cambio de imagen sin transicion.
  */
 window.onload = function (){
-    clearInterval(completado) //Para el temporizador de transiciones
+   clearInterval(completado) //Para el temporizador de transiciones
    clearInterval(parar) //Para el temporizador de cambio de imagen
-   parar = setInterval(cambio, 8000) //Inicia el temporizador inicial de cambio de imagen
+   parar = setInterval(cambio, intervalo) //Inicia el temporizador inicial de cambio de imagen
    cambio() //cambia la imagen
 }
 /**
@@ -79,6 +82,7 @@ window.onload = function (){
  */
 document.getElementById("none").onclick = function(){
     modo="0";
+    
     
 }    
 document.getElementById("IzDe").onclick = function(){
@@ -120,4 +124,8 @@ document.getElementById("Gp").onclick = function(){
 
 document.getElementById("commit").onclick = function(){
     cambiarTamaño();
+}
+
+document.getElementById("commitIntervalo").onclick = function(){
+    cambiarIntervalo();
 }
