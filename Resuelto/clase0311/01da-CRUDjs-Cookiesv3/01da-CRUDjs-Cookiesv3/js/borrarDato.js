@@ -1,19 +1,22 @@
 'use strict';
 
-function borrarDato(clave){
-    let fecha = new Date();//UTC
-    let caducidad=2*60*1000;
-    let fechaMs=fecha.getTime() - caducidad;// Fecha actual - la caducidad
-    fecha.setTime(fechaMs);//ms to UTC
-    document.cookie= //Este codigo define las caracteristicas de la cookie a revisar
-        clave+ "="+
-         ";expires="+ 
-        fecha.toUTCString() +
-        ";path./;SameSite=Strict;Secure";
-    console.log(document.cookie);
+function borrarDato(nombre){
+    datos = JSON.parse(localStorage.getItem("localData"));
+    let newData=[];
+    for(let dato of datos){
+        if(dato.nombre != nombre) {
+            newData.push(dato);
+        }
+    } 
+    localStorage.setItem('localData', JSON.stringify(newData));
+   
+    mostrarDato();
 }
+//localStorage hay que quitar el objeto nulo, o localStorage.removeItem('localData')
 
-/* function borrarDato(clave) {
-let minutes =2;
-let fecha= new date(new Date().getTime()-minutes*60000);
-}*/
+function borrarTodo(){
+     window.localStorage.clear();
+     console.log(localStorage);
+     
+     mostrarDato();
+}
