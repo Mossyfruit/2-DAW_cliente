@@ -1,7 +1,7 @@
 'use strict'
 
 //Hacemos una funcion para actualizar tablas en la base de datos
-function updateTable(id) {
+function updateTable(nombre) {
    
     //Crearemos un nuevo boton al principio de la aplicacion, que tome el NOMBRE del dato, localice 
     //el elemento en la tabla con el mismo nombre, recoja su id, lo elimine, y reinserte un valor en el
@@ -13,7 +13,7 @@ function updateTable(id) {
     solicitudDB.onsuccess = function (event) {
         bd = event.target.result;
         canalBD = bd.transaction(tablaBD, "readwrite").objectStore(tablaBD);
-        canalBD.delete(registro.id);
+        
         //ahora introducimos los nuevos valores
         canalBD.put({ nombre, edad });
     };
