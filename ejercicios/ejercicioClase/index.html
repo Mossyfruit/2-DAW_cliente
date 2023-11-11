@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript</title>
+  <link href="./img/favicon.ico" rel="icon" type="image/x-icon" >
+  <link href="./css/styles.css" rel="stylesheet" type="text/css" />
+  <script  src="./js/aleatorio.js" type="module"></script>
+  <script  src="./js/Lista.js" type="module"></script>
+  <script  src="./js/Cola.js" type="module"></script>
+  <script  src="./js/reparar.js" type="module"></script>
+  <script  src="./js/paraReparar.js" type="module"></script>
+  <script  src="./js/Pila.js" type="module"></script>
+  <script  src="./js/ListaTarea.js" type="module"></script>
+  <script  src="./js/lavar.js" type="module"></script>
+  <script  src="./js/mostrarResPila.js" type="module"></script>
+  <script  src="./js/mostrarResCola.js" type="module"></script>
+  <script  src="./js/paraLavar.js" type="module"></script>
+  <script defer src =  "./js/script.js" type="module"></script>
+  
+</head>
+
+<body>
+  <!-- --------HEADER---------- -->
+  <div class="header">
+    <h3>
+      Plantilla de Cliente
+    </h3>
+    <h4>Desarrollo WEB en entorno cliente</h4>
+    <h5>Iván Hijano Soler</h5>
+  </div>
+  <!-- ---------MENU----------- -->
+  <div class="topnav">
+    <a href="https://www.w3schools.com/js/default.asp">w3schools</a>
+    <a href="https://es.javascript.info/js">javascript.info</a>
+    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">MDN</a>
+  </div>
+  <br />
+  <!-- ------MAIN-CONTENT------ -->
+  <div class="container">
+    <div class="card">
+      <div class="cardTitle">Ejercicio 14</div>
+      <div class="cardBody">
+        <p>CLASES</p>
+        
+       
+        <div class="content">
+          <h2>TAREAS</h2>
+          <div class="grid-container">
+  
+              <!-- ************************************************************** -->
+  
+              <!-- TITULO -->
+              <div class="grid-item">
+                  <div class="title">Ejercicios de Pilas, Colas y Listas (POO)</div>
+              </div> <!-- FIN grid-item-->
+              <!-- RESULTADO TITULO -->
+              <div class="grid-item">
+                  <div class="title">Soluciones a los ejercicios de Pilas, Colas y Listas (POO)</div>
+              </div>
+  
+              <!-- ************************************************************** -->
+  
+              <!-- EJERCICIO Pila - LIFO -->
+              <div class="grid-item">
+                  <p><strong>Pila (Stack) - LIFO</strong></p>
+                  <input type='button' id="introducir" value="Para Lavar" />
+                  <input type='button' id="obtener" value="Lavar" />
+              </div> <!-- FIN grid-item-->
+              <!-- RESULTADO EJERCICIO Pila - LIFO -->
+              <div class="grid-item">
+                  <p><strong>Resultado para Pila - LIFO</strong></p>
+                  <label>
+                      <pre>Resultado: </pre>
+                  </label>
+                  <p id="resPila"></p>
+                  <p id="pilaLleno"></p>
+              </div>
+  
+              <!-- ************************************************************** -->
+  
+              <!-- EJERCICIO Cola - FIFO -->
+              <div class="grid-item">
+                  <p><strong>Cola (Queue) - LIFO</strong></p>
+                  <input type='button' id="llegada" value="Para Reparar" />
+                  <input type='button' id="atender" value="Reparar" />
+              </div> <!-- FIN grid-item-->
+              <!-- RESULTADO EJERCICIO Cola - FIFO -->
+              <div class="grid-item">
+                  <p><strong>Resultado para Cola - FIFO</strong></p>
+                  <label>
+                      <pre>Resultado: </pre>
+                  </label>
+                  <p id="resCola"></p>
+                  <p id="colaLleno"></p>
+              </div>
+  
+              <!-- ************************************************************** -->
+  
+              <!-- EJERCICIO Lista -->
+              <div class="grid-item">
+                  <p><strong>Listas</strong></p>
+                  <input type='button' id="anadir" value="Añadir" />
+                  <input type='button' id="eliminar" value="Eliminar" />
+              </div> <!-- FIN grid-item-->
+              <!-- RESULTADO EJERCICIO Lista -->
+              <div class="grid-item">
+                  <p><strong>Resultado para Lista - Ordenada</strong></p>
+                  <label>
+                      <pre>Resultado: </pre>
+                  </label>
+                  <p id="resLista"></p>
+                  <p id="listaLleno"></p>
+              </div>
+  
+              <!-- ************************************************************** -->
+  
+              <!-- EJERCICIO Lista - Prioridad -->
+              <div class="grid-item">
+                  <p><strong>Listas prioridad</strong></p>
+                  <input type='button' id="anadirPrior" value="Añadir" />
+                  <input type='button' id="eliminarPrior" value="Eliminar" />
+              </div> <!-- FIN grid-item-->
+              <!-- RESULTADO EJERCICIO Lista - Prioridad -->
+              <div class="grid-item">
+                  <p><strong>Resultado para Lista - Prioridad</strong></p>
+                  <label>
+                      <pre>Resultado: </pre>
+                  </label>
+                  <p id="resListaPrior"></p>
+                  <p id="listaLlenoPrior"></p>
+              </div>
+  
+              <!-- ************************************************************** -->
+  
+          </div> <!-- FIN grid-container-->
+      </div> <!-- FIN contenedor-->
+        
+
+      </div> 
+        
+
+      </div>
+      
+    </div>
+    <div class="cardFooter"><a href="../../index.html">&gt;&gt; Regresar</a></div>
+  </div>
+  <br />
+  <!-- ---------FOOT----------- -->
+  <div class="footer">
+    © Luis José Sánchez & José García (jota) ☺
+    <br>
+    -------------------------------------------
+    <br>
+    Iván Hijano Soler
+  </div>
+</body>
+
+</html>
