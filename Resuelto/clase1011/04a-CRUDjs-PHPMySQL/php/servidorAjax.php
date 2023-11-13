@@ -21,9 +21,9 @@ if (isset($_POST['operacion']) && $_POST['operacion'] == 'leer') {
 
 // ESTOY GRABANDO
 if (isset($_POST['operacion']) && $_POST['operacion'] == 'grabar') {
-    $valor1 = $_POST['valor1'];
-    $valor2 = $_POST['valor2'];
-    $consulta = "INSERT INTO `valores` (`valor1`, `valor2`) VALUES ('$valor1', '$valor2')";
+    $nombre = $_POST['nombre'];
+    $edad = $_POST['edad'];
+    $consulta = "INSERT INTO `datos` (`nombre`, `edad`) VALUES ('$nombre', '$edad')";
     $registros = mysqli_query($conexion, $consulta) or die(mysqli_error($conexion));
 
     $datos = [];
@@ -32,8 +32,8 @@ if (isset($_POST['operacion']) && $_POST['operacion'] == 'grabar') {
 
 // ESTOY BORRANDO
 if (isset($_POST['operacion']) && $_POST['operacion'] == 'borrar') {
-    $valor = $_POST["valor"];
-    $consulta = "DELETE FROM `valores` WHERE valor1='$valor'";
+    $valor = $_POST["datos"];
+    $consulta = "DELETE FROM `datos` WHERE nombre='$nombre'";
     $registros = mysqli_query($conexion, $consulta) or die(mysqli_error($conexion));
 
     $datos = [];

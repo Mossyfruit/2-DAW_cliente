@@ -1,5 +1,7 @@
 'use strict';
-
+/**
+ * Necesitamos la conexion a JQuery. Podemos sacarla en releases.jquery.com/jquery/
+ */
 leerDatos(); // MUESTRO LOS DATOS
 const nombre = document.getElementById("nombre");
 const clave = document.getElementById("clave");
