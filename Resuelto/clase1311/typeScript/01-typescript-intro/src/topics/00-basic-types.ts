@@ -1,5 +1,5 @@
 export {}
-
+console.log("VARIABLES");
 let nombre: string = "Strider";
 let puntoVida: number = 95;
 let arma:string = "Espada";
@@ -74,3 +74,4 @@ console.log(Tanjiro,Goku,heroe);
 
 let hpPoints: number| string;
 hpPoints=95;
+console.log(hpPoints);

@@ -11,4 +11,6 @@ interface Personaje{
 
 const strider: Personaje = {
     name:"Strider",
+    hp: 100,
+    skills: ["Saltar"]
 }
