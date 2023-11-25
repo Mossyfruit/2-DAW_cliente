@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<script defer src="./js/clienteAjax.js" type="text/javascript"></script>
+	<script defer src="./js/borrarDatos.js" type="text/javascript"></script>
+	<script defer src="./js/grabarDatos.js" type="text/javascript"></script>
+	<script defer src="./js/leerDatos.js" type="text/javascript"></script>
+	<script defer src="./js/actualizarDatos.js" type="text/javascript"></script>
+	<script defer src="./js/script.js" type="text/javascript"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script> <!-- CDN: librería jQuery -->
+	<link rel="stylesheet" href="./css/styles.css" />
+	<title>jQuery+Ajax+PHP</title>
+</head>
+
+<body>
+	<div id="contenedor">
+		<h2>Práctica. CRUD. JSES6. 'jQuery+Ajax+PHP'</h2>
+<!-- 		<form id="form1" action="#" method="post"> -->
+			<fieldset>
+				<legend>Guardar nombre y clave</legend>
+				<table id="tabla" class="filas">
+					<thead>
+						<tr>
+							<th><label name="labelNombre" for="nombre">Introduce un nombre</label></th>
+							<th><label name="labelEdad" for="clave">Introduce una edad</label></th>
+						</tr>
+						<tr>
+							<th>
+								<input type="text" id="nombre" class="control" name="nombre" size="20"
+									placeholder="Escribe un nombre..." required />
+							</th>
+							<th>
+								<input type="text" id="edad" class="control" name="clave" size="20"
+									placeholder="Escribe una edad..." required />
+							</th>
+							<th>
+								<input type="button" id="guardar" value="Guardar"></input>
+								<img src="./img/save.svg" alt="Guardar" width="22" height="22"
+										style="vertical-align: middle" />
+							</th>
+							<th>
+								<input type="button" id="actualizar" value="Actualizar"></input>
+							
+							</th>
+						</tr>
+					</thead>
+
+					<tbody id="cuerpo">
+					</tbody>
+				</table>
+			</fieldset>
+<!-- 		</form> -->
+	</div>
+</body>
+
+</html>

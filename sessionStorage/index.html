@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script  src="./js/borrarTodo.js" type="text/javascript"></script>
+	<script  src="./js/borrarDato.js" type="text/javascript"></script>
+	<script  src="./js/grabarDato.js" type="text/javascript"></script>		
+	<script  src="./js/representaDatos.js" type="text/javascript"></script>	
+	<script  src="./js/mostrarDatos.js" type="text/javascript"></script>
+	<script  src="./js/actualizarDato.js" type="text/javascript"></script>
+	<script defer src="./js/script.js" type="text/javascript"></script>	
+	<link rel="stylesheet" href="./css/styles.css" />
+	<link href="./img/favicon.ico" rel="icon" type="image/x-icon">
+	<title>SessionStorage</title>
+</head>
+
+<body>
+	<div id="contenedor">
+		<h2>Práctica. CRUD. JSES6. 'sessionStorage'</h2>
+		<!-- 		<form id="form1" action="#" method="post"> -->
+		<fieldset>
+			<legend>Guardar nombre y edad</legend>
+			<table id="tabla" class="filas">
+				<thead>
+					<tr>
+						<th><label name="labelNombre" for="nombre">Introduce un nombre</label></th>
+						<th><label name="labelEdad" for="edad">Introduce una edad</label></th>
+					</tr>
+					<tr>
+						<th>
+							<input type="text" id="nombre" class="control" name="nombre" size="20"
+								placeholder="Escribe un nombre..." required />
+						</th>
+						<th>
+							<input type="text" id="edad" class="control" name="edad" size="20"
+								placeholder="Escribe una edad..." required />
+						</th>
+						<th>
+							<input type="button" id="guardar" value="Guardar"></input>
+							<img src="./img/save.svg" alt="Guardar" width="22" height="22"
+								style="vertical-align: middle" />
+							<input type="button" id="borrar" value="Borrar"></input>
+							<img src="./img/delete.svg" alt="Borrar" width="22" height="22"
+								style="vertical-align: middle" />
+							<input type="button" id="borrarDatos" value="Borrar Datos"></input>
+							<img src="./img/delete.svg" alt="Borrar Datos" width="22" height="22"
+								style="vertical-align: middle" />
+							<input type="button" id="actualizar" value="Actualizar"></input>
+						</th>
+					</tr>
+				</thead>
+				<tbody id="cuerpo">
+				</tbody>
+			</table>
+		</fieldset>
+		<!-- 		</form> -->
+	</div>
+</body>
+
+</html>
