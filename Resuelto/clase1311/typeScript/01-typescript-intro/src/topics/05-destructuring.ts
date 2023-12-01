@@ -18,6 +18,3 @@ interface textCalculationOptions {
     products: Productos []
 }
 
-function textCalculator(Compra: textCalculationOptions): number[] {
-
-}
