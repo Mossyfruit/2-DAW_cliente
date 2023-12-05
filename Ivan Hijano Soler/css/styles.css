@@ -1,0 +1,106 @@
+body {
+  margin-top: 4%;
+  margin-left: 40% ;
+  font-family: 'Source Sans Pro', sans-serif;
+  
+  
+  
+  
+}
+#selector{
+display: flex;
+
+
+}
+.casio{
+  text-align: left;
+  margin-bottom: 3%;
+  color: #ddd;
+}
+#calc{
+    background-color: rgb(50, 50, 50);
+    width: 450px;
+    height: 450px;
+    position: fixed;
+    padding: 20px;
+  
+  box-shadow: 0px 1px 4px 0px rgba(77, 77, 77, 0.685);
+  border-radius: 1px;
+  
+  
+}
+.field{
+    background-color: aliceblue;
+    border: 1px solid #ddd;
+    border-radius: 1px;
+    height: 60px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 6px;
+    font-size: 2.3rem;
+    overflow-x: auto;
+    transition: all .2s ease-in-out;
+}
+
+.button{
+    background-color: rgb(182, 182, 182);
+    display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 1px;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  margin: 20px 40px 5px 0;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.number{
+  background-color: rgb(137, 174, 223);
+  display: inline-block;
+border: 1px solid #bbb;
+border-radius: 1px;
+width: 50px;
+text-align: center;
+padding: 5px;
+margin: 20px 40px 5px 0;
+cursor: pointer;
+font-size: 1rem;
+}
+
+.operator{
+  background-color: rgb(230, 160, 120);
+  display: inline-block;
+border: 1px solid #bbb;
+border-radius: 1px;
+width: 50px;
+text-align: center;
+padding: 5px;
+margin: 20px 40px 5px 0;
+cursor: pointer;
+font-size: 1rem;
+}
+.science{
+  background-color: rgb(57, 216, 163);
+  display: inline-block;
+border: 1px solid #bbb;
+border-radius: 1px;
+width: 50px;
+text-align: center;
+padding: 5px;
+margin: 20px 40px 5px 0;
+cursor: pointer;
+font-size: 1rem;
+
+}
+.removeScience{
+  display: none;
+}
+.button:hover {
+    border: 1px solid #bbb;
+   
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  
