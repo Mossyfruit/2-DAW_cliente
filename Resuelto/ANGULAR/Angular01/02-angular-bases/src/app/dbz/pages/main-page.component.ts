@@ -32,4 +32,7 @@ export class MainPageComponent {
     console.log("Desde main: ",id);
     this.characters.splice(id,1);
   }
+  onUpdateCharacter(character: Character):void{
+    this.onDeleteCharacter()
+  }
 }
